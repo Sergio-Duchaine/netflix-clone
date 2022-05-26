@@ -1,0 +1,34 @@
+@media (max-width:480px){
+    .navbar{
+        padding:0px;
+        width:100%;
+        
+        
+    }
+    .navbar .logo i{
+        display: none;
+    }
+ 
+    .logo img{
+        padding-left:10px;
+        
+    }
+    .navbar .searchbar .search input{
+        height: 0px;
+        width: 0px;
+        
+
+    }
+    .navbar .searchbar{
+        height:0px;
+        width:0px;
+    }
+    .searchbar #mic{
+        display:none;
+    }
+    .navbar .navigation-icons .material-icons:not(#account){
+        display:none;
+    }
+
+   
+}

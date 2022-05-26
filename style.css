@@ -1,0 +1,251 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height:56px;
+    padding:0 16px;
+    overflow: x;
+    background: white;
+    width: 100%;
+}
+.navbar .logo{
+    display:flex;
+    align-items: center;
+
+}
+.logo img{
+    width: 100px;
+    padding:18px 14px 18px 16px;
+
+    
+
+}
+.logo p{
+    color:#606060;
+    font-size:10px;
+    margin: 12px 0px 0px -10px;
+    padding-bottom:20px;
+}
+.navbar .searchbar{
+    display:flex;
+    box-sizing: border-box;
+    margin:0;
+    height:40px;
+    align-items:center;
+}
+.search button .material-icons{
+    margin:0px;
+    padding:2px;
+}
+.search {
+    display:flex;
+    width:600px;
+    border:1px solid hsl(0deg 0% 80%);
+    margin-right:10px;
+    height:100%;
+    border-radius: 3px;
+    cursor: text;
+    
+}
+.search input{
+    margin:0;
+    box-sizing:border-box;
+    width:90%;
+    appearance: none;
+    border:none;
+    padding-left:5px;
+    font-size: 16px;
+    font-weight: 400px;
+}
+.search button{
+    border:none;
+    width:10%;
+    border-left:1px solid hsl(0deg 0% 80%);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+
+.material-icons{
+    color:#121212;
+    margin-right:10px;
+}
+.mainbody{
+    display:flex;
+    height: calc(100vh - 56px);
+    overflow:hidden;
+}
+.categories{
+    width:240px;
+    height: 100%;
+    background: white;
+    overflow:y;
+}
+.categories:hover{
+    width:240px;
+    height: 100%;
+    background: white;
+    overflow:scroll;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px white;
+    border-radius: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background:#909090;
+    border-radius: 7px;
+}
+.category{
+    width:100%;
+    display:flex;
+    align-items:center;
+    height:40px;
+    padding:0 24px;
+    font-size:14px;
+    cursor: pointer;
+    font: weight 400px;  
+}
+.active{
+    background:#f2f2f2;
+    font-weight:500px;
+}
+.active i{
+    color:red;
+}
+.active:hover{
+    background: #f2f2f2;
+}
+.category i {
+    margin-right:24px;
+}
+
+.category:hover{
+    background:#f9f9f9;
+}
+.categories-section{
+    border-bottom: 1px solid hsl(0deg 0% 80%);
+    margin-top:10px;
+
+}
+.categories-section .category:last-child{
+    margin-bottom:10px;
+    
+}
+.categories-section .footer-section{
+    margin-bottom: none;
+}
+.category-subheading{
+    border-bottom: 1px solid hsl(0deg 0% 80%);
+    margin-top:10px;
+}
+.category-subheading .category:last-child{
+    margin-bottom:10px;
+
+}
+.Side-Headings{
+    display:block;
+    padding:8px 24px;
+    font-size: 14px;
+    color:#606060;
+    font-weight: 500;
+
+}
+
+
+.videos{
+    border-top: 1px solid hsl(0deg 0% 80%);
+    width:calc(100vw - 240px);
+    height:100%;
+    background:#f9f9f9;
+    overflow: scroll;
+}
+.footer-section{
+    color:#606060;
+    display:block;
+    padding:16px 24px 0px;
+    font-weight:401 ;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 0px 8px 0px 0px;
+    border-top:1px solid hsl(0deg 0% 80%);    
+}
+.footer-section span {
+    padding: 0px 8px 0px 0px;
+}
+.footer-section-end{
+    color:#606060;
+    display:block;
+    padding:16px 24px 16px 24px;
+    font-weight:401 ;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 0px 8px 0px 0px;
+    border-bottom: 0px;
+}
+.copyright{
+    font-size:12px;
+    color:#909090;
+    padding:16px 24px;
+
+}
+.video .details{
+    display: flex;
+    margin-top: 5px;
+    padding-right:24px;
+}
+.video .video-details p{
+    font-size:14px;
+    color:#030303;
+    font-weight: 500;
+    line-height:20px;
+}
+.video{
+    
+    width:calc(25% - 12px);
+    margin-right: 12px;
+    cursor: pointer;
+    margin-bottom:20px;
+}
+.video .thumbnail img{
+    width:100%;
+    height: 61%;
+}
+.video .thumbnail{
+     height:276.58px;
+}
+.video-grid{
+    display:flex;
+    flex-wrap: wrap;
+    padding:15px;
+    
+}
+.video .profile{
+    display: flex;
+    
+}
+.video .profile img{
+    border-radius: 50%;
+    width:36px;
+    height:36px;
+    margin-right: 15px;
+}
+.video .posted-by{
+    font-size:12px;
+    font-weight: 400 ;
+    color: #606060;
+    padding-top: 1.2px;
+    line-height: 20px;
+}
